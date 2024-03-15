@@ -1,0 +1,35 @@
+img{
+    width: 200px;
+    height: 250px;
+}
+.anasayfa:hover{
+    background-color: rgb(154, 147, 138);
+    color:white;
+    padding: 10px;
+    
+
+}
+.header{
+    position: sticky;
+    top:0px;
+}
+.link:hover{
+    color: red;
+}
+
+select input{
+    width: 300px;
+}
+.odeme{
+margin-left: -5px;
+}
+.anasayfadon{
+    color: black;
+    font-weight: bolder;
+    font-size: 16px;
+
+}
+.anasayfadon:hover{
+  text-decoration: underline;
+  
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ödeme</title>
+  </head>
+  <body>
+    <div class="container d-flex flex-column align-items-center mt-5">
+      <div class="row">
+        <div class="col-12">
+          <form class="d-flex flex-column align-items-start">
+            <select>
+              <option value="">Lütfen Satın Alınacak Ürün Seçin</option>
+              <option value="">Kırmızı Elektro Gitar (250$ )</option>
+              <option value="">Siyah Piyano (550$)</option>
+              <option value="">Klasik Keman (150$ )</option>
+              <option value="">Klasik Flüt (350$ )</option>
+              <option value="">Klasik Davul Set (750$ )</option>
+              <option value="">Klasik Trompet (300$ )</option>
+              <option value="">Klasik Klarnet (200$ )</option>
+              <option value="">Klasik Saksafon (450$ )</option>
+              <option value="">Klasik Keman (550$)</option>
+            </select>
+            <label class="mt-3" for="isim">İsim :</label>
+            <input class="mt-2" id="isim" type="text" placeholder="Adınız.."/><br />
+            <label class="mt-3" for="soyisim" >Soyİsim :</label>
+            <input class="mt-2" id="soyisim" type="text" placeholder="Soyadınız.."/><br />
+            <label class="mt-3" for="kart">Kart No :</label>
+            <input
+              class="mt-1"
+              id="kart"
+              type="text"
+              pattern="\d{1,16}"
+              placeholder="XXXX XXXX XXXX XXXXX"
+            /><br />
+            <label class="mb-2" for="adres">Adresinizi Giriniz: </label>
+            <textarea id="adres" cols="30" rows="10"></textarea>
+            <div class="odeme">
+              <a class="btn btn-primary mt-4 me-2" href="./OdemeOnay.html">
+                Ödemeyi Onayla</a
+              >
+              <a class="btn btn-primary mt-4" href="./Urunler.html">
+                Siparişi İptal Et</a
+              >
+            </div>
+            <div class="d-flex justify-content-center w-100 mt-4">
+              <input
+                class="btn btn-warning"
+                type="reset"
+                value="Seçenekleri Resetle"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
